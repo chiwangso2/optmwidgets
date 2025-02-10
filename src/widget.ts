@@ -258,7 +258,7 @@ export class JSWidgetView extends DOMWidgetView {
 }
 
 
-export class OPTWidgetModel extends DOMWidgetModel {
+export class OPTMWidgetModel extends DOMWidgetModel {
   defaults() {
     return {
       ...super.defaults(),
@@ -280,7 +280,7 @@ export class OPTWidgetModel extends DOMWidgetModel {
   };
 }
 
-export class OPTWidgetView extends DOMWidgetView {
+export class OPTMWidgetView extends DOMWidgetView {
   private outputContainer: HTMLDivElement;
   private outputIFrame: HTMLIFrameElement;
   private widgetContainer: HTMLDivElement;
