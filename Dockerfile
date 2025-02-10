@@ -14,9 +14,9 @@ RUN mamba install --quiet --yes \
     mamba clean --all -f -y && \
     fix-permissions "${CONDA_DIR}" 
 
-COPY --chown=${NB_UID}:${NB_GID} ./ divewidgets/
+COPY --chown=${NB_UID}:${NB_GID} ./ optmwidgets/
 
-# RUN cd divewidgets/ && \
+# RUN cd optmwidgets/ && \
 #     pip install --quiet --no-cache-dir -e . && \
 #     jupyter labextension develop . --overwrite && \
 #     fix-permissions "${CONDA_DIR}"

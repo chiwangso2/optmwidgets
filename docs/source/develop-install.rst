@@ -3,11 +3,11 @@ Developer install
 =================
 
 
-To install a developer version of divewidgets, you will first need to clone
+To install a developer version of optmwidgets, you will first need to clone
 the repository::
 
-    git clone https://github.com/DIVE/divewidgets
-    cd divewidgets
+    git clone https://github.com/DIVE/optmwidgets
+    cd optmwidgets
 
 Next, install it with a develop install using pip::
 
@@ -17,9 +17,9 @@ Next, install it with a develop install using pip::
 If you are planning on working on the JS/frontend code, you should also do
 a link installation of the extension::
 
-    jupyter nbextension install [--sys-prefix / --user / --system] --symlink --py divewidgets
+    jupyter nbextension install [--sys-prefix / --user / --system] --symlink --py optmwidgets
 
-    jupyter nbextension enable [--sys-prefix / --user / --system] --py divewidgets
+    jupyter nbextension enable [--sys-prefix / --user / --system] --py optmwidgets
 
 with the `appropriate flag`_. Or, if you are using Jupyterlab::
 

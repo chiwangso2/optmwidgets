@@ -1,5 +1,5 @@
 
-# DIVE Widgets
+# OPTM Widgets
 
 Jupyter Widgets for DIVE virtual learning environment. The project aims to integrate interactive learning tools into jupyter notebook. E.g.,
 
@@ -14,34 +14,34 @@ Example notebooks can be found under the [examples](./examples) folder.
 You can install using `pip`:
 
 ```bash
-pip install divewidgets
+pip install optmwidgets
 ```
 
 or `conda`:
 
 ```bash
-conda install -c dive divewidgets
+conda install -c dive optmwidgets
 ```
 
 or `mamba`:
 
 ```bash
-mamba install -c dive divewidgets
+mamba install -c dive optmwidgets
 ```
 
 
 If you are using Jupyter Notebook 5.2 or earlier, you may also need to enable
 the nbextension:
 ```bash
-jupyter nbextension enable --py [--sys-prefix|--user|--system] divewidgets
+jupyter nbextension enable --py [--sys-prefix|--user|--system] optmwidgets
 ```
 
 ## Development Installation
 
 Create a dev environment:
 ```bash
-conda create -n divewidgets-dev -c conda-forge nodejs python jupyterlab
-conda activate divewidgets-dev
+conda create -n optmwidgets-dev -c conda-forge nodejs python jupyterlab
+conda activate optmwidgets-dev
 ```
 
 Install the python. This will also build the TS package.
@@ -60,8 +60,8 @@ jlpm run build
 For classic notebook, you need to run:
 
 ```
-jupyter nbextension install --sys-prefix --symlink --overwrite --py divewidgets
-jupyter nbextension enable --sys-prefix --py divewidgets
+jupyter nbextension install --sys-prefix --symlink --overwrite --py optmwidgets
+jupyter nbextension enable --sys-prefix --py optmwidgets
 ```
 
 Note that the `--symlink` flag doesn't work on Windows, so you will here have to run

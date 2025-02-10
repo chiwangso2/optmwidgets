@@ -9,7 +9,7 @@ include .coverage.rc
 include tsconfig.json
 include package.json
 include webpack.config.js
-include divewidgets/labextension/*.tgz
+include optmwidgets/labextension/*.tgz
 
 # Documentation
 graft docs
@@ -26,7 +26,7 @@ graft tests
 prune tests/build
 
 # Javascript files
-graft divewidgets/nbextension
+graft optmwidgets/nbextension
 graft src
 graft css
 prune **/node_modules
@@ -41,5 +41,5 @@ global-exclude .git
 global-exclude .ipynb_checkpoints
 
 # Package data
-divewidgets/nbextension/**js*
-divewidgets/labextension/**
+optmwidgets/nbextension/**js*
+optmwidgets/labextension/**

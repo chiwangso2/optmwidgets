@@ -9,7 +9,7 @@ from os.path import join as pjoin
 from setuptools import setup
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-NAME = 'divewidgets'
+NAME = 'optmwidgets'
 
 try:
     from jupyter_packaging import (
@@ -28,10 +28,10 @@ try:
     ]
 
     data_files_spec = [
-        ('share/jupyter/nbextensions/divewidgets', 'divewidgets/nbextension', '**'),
-        ('share/jupyter/labextensions/jupyter-divewidgets', 'divewidgets/labextension', '**'),
-        ('share/jupyter/labextensions/jupyter-divewidgets', '.', 'install.json'),
-        ('etc/jupyter/nbconfig/notebook.d', '.', 'divewidgets.json'),
+        ('share/jupyter/nbextensions/optmwidgets', 'optmwidgets/nbextension', '**'),
+        ('share/jupyter/labextensions/jupyter-optmwidgets', 'optmwidgets/labextension', '**'),
+        ('share/jupyter/labextensions/jupyter-optmwidgets', '.', 'install.json'),
+        ('etc/jupyter/nbconfig/notebook.d', '.', 'optmwidgets.json'),
     ]
 
     cmdclass = wrap_installers(
