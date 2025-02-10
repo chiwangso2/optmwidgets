@@ -7,7 +7,7 @@
 """
 Interactive widgets for DIVE virtual learning environment.
 
-%load_ext divewidgets
+%load_ext optmwidgets
 
 E.g., to create a mermaid graph 
 %%mermaid
@@ -16,7 +16,7 @@ A[a] --> B[b]
 B --> C[c] 
 B --> D[d]
 
-from divewidgets import create_mermaid
+from optmwidgets import create_mermaid
 create_mermaid(code='''
 graph TD 
 A[a] --> B[b] 

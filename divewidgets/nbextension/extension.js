@@ -6,7 +6,7 @@ define(function() {
     window['requirejs'].config({
         map: {
             '*': {
-                'jupyter-divewidgets': 'nbextensions/divewidgets/index',
+                'jupyter-optmwidgets': 'nbextensions/optmwidgets/index',
             },
         }
     });

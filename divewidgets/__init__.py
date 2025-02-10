@@ -29,7 +29,7 @@ def _jupyter_labextension_paths():
     """
     return [{
         'src': 'labextension',
-        'dest': 'jupyter-divewidgets',
+        'dest': 'jupyter-optmwidgets',
     }]
 
 
@@ -52,6 +52,6 @@ def _jupyter_nbextension_paths():
     return [{
         'section': 'notebook',
         'src': 'nbextension',
-        'dest': 'divewidgets',
-        'require': 'divewidgets/extension'
+        'dest': 'optmwidgets',
+        'require': 'optmwidgets/extension'
     }]

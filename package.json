@@ -1,5 +1,5 @@
 {
-  "name": "jupyter-divewidgets",
+  "name": "jupyter-optmwidgets",
   "version": "0.1.5",
   "description": "Jupyter Widgets for DIVE virtual learning environment.",
   "keywords": [
@@ -13,20 +13,19 @@
     "dist/*.js",
     "css/*.css"
   ],
-  "homepage": "https://github.com/DIVE/divewidgets",
+  "homepage": "https://github.com/chiwangso2/optmwidgets",
   "bugs": {
-    "url": "https://github.com/DIVE/divewidgets/issues"
+    "url": "https://github.com/chiwangso2/optmwidgets/issues"
   },
   "license": "BSD-3-Clause",
   "author": {
-    "name": "Chung Chan",
-    "email": "chungc@alum.mit.edu"
+    "name": "OPT Mentor"
   },
   "main": "lib/index.js",
   "types": "./lib/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/DIVE/divewidgets"
+    "url": "https://github.com/chiwangso2/optmwidgets"
   },
   "scripts": {
     "build": "jlpm run build:lib && jlpm run build:nbextension:dev && jlpm run build:labextension:dev",
@@ -38,8 +37,8 @@
     "build:nbextension:dev": "webpack --mode=development",
     "clean": "jlpm run clean:lib && jlpm run clean:nbextension && jlpm run clean:labextension",
     "clean:lib": "rimraf lib",
-    "clean:labextension": "rimraf divewidgets/labextension",
-    "clean:nbextension": "rimraf divewidgets/nbextension/static/index.js",
+    "clean:labextension": "rimraf optmwidgets/labextension",
+    "clean:nbextension": "rimraf optmwidgets/nbextension/static/index.js",
     "lint": "eslint . --ext .ts,.tsx --fix",
     "lint:check": "eslint . --ext .ts,.tsx",
     "prepack": "jlpm run build:lib",
@@ -94,7 +93,7 @@
   },
   "jupyterlab": {
     "extension": "lib/plugin",
-    "outputDir": "divewidgets/labextension/",
+    "outputDir": "optmwidgets/labextension/",
     "sharedPackages": {
       "@jupyter-widgets/base": {
         "bundled": false,

@@ -8,5 +8,5 @@
 Information about the frontend package of the widgets.
 """
 
-module_name = "jupyter-divewidgets"
+module_name = "jupyter-optmwidgets"
 module_version = "^0.1.5"
