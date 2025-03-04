@@ -1,6 +1,6 @@
 {
   "name": "jupyter-optmwidgets",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Jupyter Widgets for DIVE virtual learning environment.",
   "keywords": [
     "jupyter",
@@ -92,7 +92,7 @@
     "webpack-cli": "^4.0.0"
   },
   "jupyterlab": {
-    "extension": "lib/plugin",
+    "extension": true,
     "outputDir": "optmwidgets/labextension/",
     "sharedPackages": {
       "@jupyter-widgets/base": {
@@ -100,5 +100,8 @@
         "singleton": true
       }
     }
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

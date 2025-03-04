@@ -56,7 +56,8 @@ module.exports = [
         path: path.resolve(__dirname, 'dist'),
         libraryTarget: 'amd',
         library: "jupyter-optmwidgets",
-        publicPath: 'https://unpkg.com/jupyter-optmwidgets@' + version + '/dist/'
+        publicPath: 'https://unpkg.com/jupyter-optmwidgets@' + version + '/dist/',
+        publicPath:  './dist/'
     },
     devtool: 'source-map',
     module: {
